@@ -1,0 +1,168 @@
+:root {
+  --main-radius: 5px;
+  --main-padding: 5px;
+}
+.nombre {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+    font-size: 16px;
+}
+.navt {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+    font-size: 12px;
+}
+.cont1 {
+  display: grid;
+  height: 43vh;
+  grid-template-columns: 50% 50%;
+  grid-template-rows:40px 2fr;
+  grid-template-areas:
+    "nav nav"
+    "head logo";
+  gap: 0.2rem;
+}
+
+.head {
+  background: #00c093;
+  grid-area: head;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+  align-content: center;
+  justify-items: center;
+  
+}
+.nav {
+  grid-area: nav;
+  background: #ffffff;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+}
+.logo {
+  grid-area: logo;
+  align-content: center;
+  justify-items: center;
+  background: #00c093;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+  
+}
+
+.sizel {
+  width: 250px;
+}
+
+.cont2 {
+  display: grid;
+  height: 45vh;
+  grid-template-columns: 18% 50% 32%;
+  grid-template-rows: 1.9fr 1.2fr 2.5fr;
+  grid-template-areas:
+    "srch about about"
+    "srch iam iam"
+    "srch wido wido";
+  gap: 0.2rem;
+  margin-top: 3px;
+}
+
+.about {
+  grid-area: about;
+  background: #00c093;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+  align-self: center;
+  justify-self: center;
+  border: 2px dotted #3d3d3d;
+}
+
+.logo01 {
+  width: 150px;
+}
+.srch {
+  position: relative;
+  grid-area: srch;
+  background: #00c093;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+  align-content: center;
+  justify-items: center;
+}
+
+.loc01 {
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.loc02 {
+  position: absolute;
+  bottom: 70px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.bebas {
+  font-family: "Boldonse", system-ui;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 60px;
+  font-stretch: 200%;
+}
+.bebas1 {
+  font-family: "Boldonse", system-ui;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 16px;
+}
+.bebas2 {
+  font-family: "Boldonse", system-ui;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 16px;
+}
+.bebas3 {
+  font-family: "Boldonse", system-ui;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 16px;
+}
+.bebas4 {
+  font-family: "Boldonse", system-ui;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 16px;
+}
+.iam {
+  grid-area: iam;
+  background: #00c093;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+}
+.wido {
+  grid-area: wido;
+  background: #00c093;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0.2rem;
+}
+
+.skill {
+  background: #367063;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+  justify-items: center;
+  padding: 20px;
+  text-align: justify;
+}
+.mec {
+  text-align: center;
+}
