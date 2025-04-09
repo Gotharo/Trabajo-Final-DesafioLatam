@@ -2,9 +2,6 @@
   --main-radius: 5px;
   --main-padding: 5px;
   --main-bg-color: rgba(255, 173, 0, 1);
-
-
-
 }
 .bk {
   background-color: #1b1b1b;
@@ -14,24 +11,31 @@
   font-optical-sizing: auto;
   font-weight: 900;
   font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
-    font-size: 16px;
+  font-variation-settings: "wdth" 100;
+  font-size: 16px;
 }
 .navt {
   font-family: "Roboto", sans-serif;
   font-optical-sizing: auto;
   font-weight: 100;
   font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
-    font-size: 12px;
+  font-variation-settings: "wdth" 100;
+  font-size: 12px;
+}
+.navt1 {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  font-size: 16px;
+  
 }
 .cont1 {
   display: grid;
   height: 39vh;
   grid-template-columns: 50% 50%;
-  grid-template-rows:40px 2fr;
+  grid-template-rows: 40px 2fr;
   grid-template-areas:
     "nav nav"
     "head logo";
@@ -39,13 +43,12 @@
 }
 
 .head {
-  background-color: var(--main-bg-color); 
+  background-color: var(--main-bg-color);
   grid-area: head;
   border-radius: var(--main-radius);
   padding-top: var(--main-padding);
   align-content: center;
   justify-items: center;
-  
 }
 .nav {
   grid-area: nav;
@@ -60,7 +63,6 @@
   background-color: var(--main-bg-color);
   border-radius: var(--main-radius);
   padding-top: var(--main-padding);
-  
 }
 
 .sizel {
@@ -73,10 +75,10 @@
   grid-template-columns: 18% 50% 32%;
   grid-template-rows: 0.6fr 1.2fr 2.5fr 3px;
   grid-template-areas:
-  "srch about about"
-  "srch iam iam"
-  "srch wido wido"
-  "ftr ftr ftr";
+    "srch about about"
+    "srch iam iam"
+    "srch wido wido"
+    "ftr ftr ftr";
   gap: 0.2rem;
   margin-top: 3px;
 }
@@ -87,11 +89,8 @@
   justify-self: center;
   background-color: var(--main-bg-color);
   border-radius: var(--main-radius);
-  
+
   width: 100%;
-  
-  
-  
 }
 .about {
   grid-area: about;
@@ -101,8 +100,19 @@
   align-self: center;
   justify-self: center;
   border: 2px dotted #3d3d3d;
+  width: 100%;
+
 }
 
+.bebas {
+  font-family: "Boldonse", system-ui;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 60px;
+  font-stretch: 200%;
+  text-align: center;
+  
+}
 .logo01 {
   width: 150px;
 }
@@ -127,13 +137,6 @@
   bottom: 70px;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-.bebas {
-  font-family: "Boldonse", system-ui;
-  font-weight: 900;
-  font-style: normal;
-  font-size: 60px;
-  font-stretch: 200%;
 }
 .bebas1 {
   font-family: "Boldonse", system-ui;
@@ -191,4 +194,12 @@
 }
 .mec {
   text-align: center;
+}
+.bycnt {
+  background-color: var(--main-bg-color);
+  border-radius: var(--main-radius);
+  padding-top: 50px;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 50px;
 }
