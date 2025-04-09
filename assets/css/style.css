@@ -29,7 +29,6 @@
   font-style: normal;
   font-variation-settings: "wdth" 100;
   font-size: 16px;
-  
 }
 .cont1 {
   display: grid;
@@ -48,7 +47,9 @@
   border-radius: var(--main-radius);
   padding-top: var(--main-padding);
   align-content: center;
-  justify-items: center;
+  justify-items: start;
+  position: relative;
+  padding-left: 60px;
 }
 .nav {
   grid-area: nav;
@@ -56,13 +57,26 @@
   border-radius: var(--main-radius);
   padding-top: var(--main-padding);
 }
-.logo {
+.nets {
   grid-area: logo;
   align-content: center;
   justify-items: center;
   background-color: var(--main-bg-color);
   border-radius: var(--main-radius);
-  padding-top: var(--main-padding);
+}
+.logo1 {
+  grid-area: logo;
+  align-content: center;
+  justify-items: center;
+  background-color: var(--main-bg-color);
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 215px;
+  height: 290px;
+  border: 2px solid #1b1b1b;
+  width: 290px;
+  border-radius: 150px;
 }
 
 .sizel {
@@ -102,7 +116,6 @@
   justify-self: center;
   border: 2px dotted #3d3d3d;
   width: 100%;
-
 }
 
 .bebas {
@@ -112,12 +125,10 @@
   font-size: 60px;
   font-stretch: 200%;
   text-align: center;
-  
 }
 .logo01 {
   width: 150px;
 }
-
 
 .bebas1 {
   font-family: "Boldonse", system-ui;
