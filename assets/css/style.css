@@ -1,6 +1,13 @@
 :root {
   --main-radius: 5px;
   --main-padding: 5px;
+  --main-bg-color: rgba(255, 173, 0, 1);
+
+
+
+}
+.bk {
+  background-color: #1b1b1b;
 }
 .nombre {
   font-family: "Roboto", sans-serif;
@@ -22,7 +29,7 @@
 }
 .cont1 {
   display: grid;
-  height: 43vh;
+  height: 39vh;
   grid-template-columns: 50% 50%;
   grid-template-rows:40px 2fr;
   grid-template-areas:
@@ -32,7 +39,7 @@
 }
 
 .head {
-  background: #00c093;
+  background-color: var(--main-bg-color); 
   grid-area: head;
   border-radius: var(--main-radius);
   padding-top: var(--main-padding);
@@ -42,7 +49,7 @@
 }
 .nav {
   grid-area: nav;
-  background: #ffffff;
+  background-color: #1b1b1b;
   border-radius: var(--main-radius);
   padding-top: var(--main-padding);
 }
@@ -50,7 +57,7 @@
   grid-area: logo;
   align-content: center;
   justify-items: center;
-  background: #00c093;
+  background-color: var(--main-bg-color);
   border-radius: var(--main-radius);
   padding-top: var(--main-padding);
   
@@ -62,20 +69,33 @@
 
 .cont2 {
   display: grid;
-  height: 45vh;
+  height: auto;
   grid-template-columns: 18% 50% 32%;
-  grid-template-rows: 1.9fr 1.2fr 2.5fr;
+  grid-template-rows: 0.6fr 1.2fr 2.5fr 3px;
   grid-template-areas:
-    "srch about about"
-    "srch iam iam"
-    "srch wido wido";
+  "srch about about"
+  "srch iam iam"
+  "srch wido wido"
+  "ftr ftr ftr";
   gap: 0.2rem;
   margin-top: 3px;
 }
 
+.ftr {
+  grid-area: ftr;
+  align-self: center;
+  justify-self: center;
+  background-color: var(--main-bg-color);
+  border-radius: var(--main-radius);
+  
+  width: 100%;
+  
+  
+  
+}
 .about {
   grid-area: about;
-  background: #00c093;
+  background-color: var(--main-bg-color);
   border-radius: var(--main-radius);
   padding-top: var(--main-padding);
   align-self: center;
@@ -89,7 +109,7 @@
 .srch {
   position: relative;
   grid-area: srch;
-  background: #00c093;
+  background-color: var(--main-bg-color);
   border-radius: var(--main-radius);
   padding-top: var(--main-padding);
   align-content: center;
@@ -139,15 +159,21 @@
   font-style: normal;
   font-size: 16px;
 }
+.bebas5 {
+  font-family: "Boldonse", system-ui;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 22px;
+}
 .iam {
   grid-area: iam;
-  background: #00c093;
+  background-color: var(--main-bg-color);
   border-radius: var(--main-radius);
   padding-top: var(--main-padding);
 }
 .wido {
   grid-area: wido;
-  background: #00c093;
+  background-color: var(--main-bg-color);
   border-radius: var(--main-radius);
   padding-top: var(--main-padding);
   display: grid;
