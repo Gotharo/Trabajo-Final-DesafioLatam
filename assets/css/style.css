@@ -72,13 +72,14 @@
 .cont2 {
   display: grid;
   height: auto;
-  grid-template-columns: 18% 50% 32%;
+  justify-content: center;
+  grid-template-columns: 5% 20% 50% 20% 5%;
   grid-template-rows: 0.6fr 1.2fr 2.5fr 3px;
   grid-template-areas:
-    "srch about about"
-    "srch iam iam"
-    "srch wido wido"
-    "ftr ftr ftr";
+    ". about about about ."
+    ". iam iam iam ."
+    ". wido wido wido ."
+    "ftr ftr ftr ftr ftr";
   gap: 0.2rem;
   margin-top: 3px;
 }
@@ -116,28 +117,8 @@
 .logo01 {
   width: 150px;
 }
-.srch {
-  position: relative;
-  grid-area: srch;
-  background-color: var(--main-bg-color);
-  border-radius: var(--main-radius);
-  padding-top: var(--main-padding);
-  align-content: center;
-  justify-items: center;
-}
 
-.loc01 {
-  position: absolute;
-  top: 100px;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.loc02 {
-  position: absolute;
-  bottom: 70px;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
+
 .bebas1 {
   font-family: "Boldonse", system-ui;
   font-weight: 100;
@@ -202,4 +183,8 @@
   padding-left: 5%;
   padding-right: 5%;
   padding-bottom: 50px;
+}
+.fitpdf {
+  margin-top: 80px;
+  height: 700px;
 }
