@@ -88,7 +88,7 @@
   height: auto;
   justify-content: center;
   grid-template-columns: 5% 20% 50% 20% 5%;
-  grid-template-rows: 0.6fr 1.2fr 2.5fr 1fr 0.7fr 1fr 0.7fr 1fr 0.7fr 1fr 0.7fr 1fr 30px;
+  grid-template-rows: 0.6fr 1.2fr 2.5fr 1fr 0.7fr 1fr 0.7fr 1fr 0.7fr 1fr 0.7fr 1fr;
   grid-template-areas:
     ". about about about ."
     ". iam iam iam ."
@@ -101,10 +101,141 @@
     ". logo3 tit3 . ."
     ". logo3 desc3 . ."
     ". logo4 tit4 . ."
-    ". logo4 desc4 . ."
+    ". logo4 desc4 . .";
+    
+  gap: 0.2rem;
+  margin-top: 3px;
+}
+.cont3 {
+  display: grid;
+  height: auto;
+  justify-content: center;
+  grid-template-columns: 5% 20% 50% 20% 5%;
+  grid-template-rows: 1fr 0.7fr 0.5fr 0.7fr 0.5fr 0.7fr 0.5fr 0.7fr 0.5fr 30px;
+  grid-template-areas:
+    ". wrk wrk wrk ."
+    ". logo6 tit5 . ."
+    ". logo6 desc5 . ."
+    ". logo7 tit6 . ."
+    ". logo7 desc6 . ."
+    ". logo8 tit7 . ."
+    ". logo8 desc7 . ."
+    ". logo9 tit8 . ."
+    ". logo9 desc8 . ."
     "ftr ftr ftr ftr ftr";
   gap: 0.2rem;
   margin-top: 3px;
+}
+.wrk {
+  grid-area: wrk;
+  background-color: var(--main-bg-color);
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+  align-self: center;
+  justify-self: center;
+  border: 2px dotted #3d3d3d;
+  width: 100%;
+}
+.desc5 {
+  grid-area: desc5;
+  background-color: var(--main-bg-color);
+  border-radius: var(--main-radius);
+  height: 100%;
+  width: 100%;
+  align-self: center;
+  justify-self: center;
+}
+.desc6 {
+  grid-area: desc6;
+  background-color: var(--main-bg-color);
+  border-radius: var(--main-radius);
+  height: 100%;
+  width: 100%;
+  align-self: center;
+  justify-self: center;
+}
+.desc7 {
+  grid-area: desc7;
+  background-color: var(--main-bg-color);
+  border-radius: var(--main-radius);
+  height: 100%;
+  width: 100%;
+  align-self: center;
+  justify-self: center;
+}
+.desc8 {
+  grid-area: desc8;
+  background-color: var(--main-bg-color);
+  border-radius: var(--main-radius);
+  height: 100%;
+  width: 100%;
+  align-self: center;
+  justify-self: center;
+}
+.tit5 {
+  grid-area: tit5;
+  background-color: var(--main-bg-color);
+  border-radius: var(--main-radius);
+  height: 100%;
+  width: 100%;
+  align-self: center;
+  justify-self: center;
+}
+.tit6 {
+  grid-area: tit6;
+  background-color: var(--main-bg-color);
+  border-radius: var(--main-radius);
+  height: 100%;
+  width: 100%;
+  align-self: center;
+  justify-self: center;
+}
+.tit7 {
+  grid-area: tit7;
+  background-color: var(--main-bg-color);
+  border-radius: var(--main-radius);
+  height: 100%;
+  width: 100%;
+  align-self: center;
+  justify-self: center;
+}
+.tit8 {
+  grid-area: tit8;
+  background-color: var(--main-bg-color);
+  border-radius: var(--main-radius);
+  height: 100%;
+  width: 100%;
+  align-self: center;
+  justify-self: center;
+}
+
+.logo6 {
+  grid-area: logo6;
+  align-self: center;
+  justify-self: center;
+  background-color: var(--main-bg-color);
+  border-radius: var(--main-radius);
+}
+.logo7 {
+  grid-area: logo7;
+  align-self: center;
+  justify-self: center;
+  background-color: var(--main-bg-color);
+  border-radius: var(--main-radius);
+}
+.logo8 {
+  grid-area: logo8;
+  align-self: center;
+  justify-self: center;
+  background-color: var(--main-bg-color);
+  border-radius: var(--main-radius);
+}
+.logo9 {
+  grid-area: logo9;
+  align-self: center;
+  justify-self: center;
+  background-color: var(--main-bg-color);
+  border-radius: var(--main-radius);
 }
 
 .ftr {
