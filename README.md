@@ -4,7 +4,7 @@ Fork 2 y commit =>
 
 <h2> Proyecto CV - Portafolio </h2>
 
-El deploy se encuentra en 
+LA Github Page  se encuentra en 
 
 <p> https://gotharo.github.io/Trabajo-Final-DesafioLatam/index.html </p>
 
