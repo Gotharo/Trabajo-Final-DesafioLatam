@@ -6,5 +6,5 @@ Fork 2 y commit =>
 
 El deploy se encuentra en 
 
-<a href="https://gotharo.github.io/Trabajo-Final-DesafioLatam/index.html)">gotharo.github.io</a>
+<p> https://gotharo.github.io/Trabajo-Final-DesafioLatam/index.html </p>
 
