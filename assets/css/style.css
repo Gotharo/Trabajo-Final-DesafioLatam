@@ -82,6 +82,12 @@
 .sizel {
   width: 250px;
 }
+.sizel1 {
+  width: 200px;
+  border: 5px solid #1b1b1b;
+  border-radius: 150px;
+  margin-top: 10px;
+}
 
 .cont2 {
   display: grid;
@@ -245,6 +251,15 @@
   background-color: var(--main-bg-color);
   border-radius: var(--main-radius);
 
+  width: 100%;
+}
+.ftr1 {
+  grid-area: ftr1;
+  align-self: center;
+  justify-self: center;
+  background-color: var(--main-bg-color);
+  border-radius: var(--main-radius);
+  margin-top: 30px;
   width: 100%;
 }
 .about {
@@ -452,4 +467,161 @@
   justify-self: center;
   background-color: var(--main-bg-color);
   border-radius: var(--main-radius);
+}
+
+/* Portafolio */
+
+.cont4 {
+  display: grid;
+  height: 100vh;
+  justify-content: center;
+  grid-template-columns: 5% 10% 20% 65% 5%;
+  grid-template-rows: 1fr 0.7fr 0.7fr 0.7fr 0.7fr 0.7fr 0.7fr 0.7fr 40px;
+  grid-template-areas:
+    ". titimg titimg titimg ."
+    ". . desc9 imgx1  ."
+    ". . desc10 imgx2  ."
+    ". . desc11 imgx3  ."
+    ". . desc12 imgx4  ."
+    ". . desc13 imgx5  ."
+    ". . desc14 imgx6  ."
+    ". . desc15 imgx7  ."
+    "ftr1 ftr1 ftr1 ftr1 ftr1";
+  gap: 0.5rem;
+  margin-top: 3px;
+}
+.titimg {
+  grid-area: titimg;
+  background-color: var(--main-bg-color);
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+  align-self: center;
+  justify-self: center;
+  border: 2px dotted #3d3d3d;
+  width: 100%;
+  margin-top: 60px;
+}
+
+.desc9 {
+  grid-area: desc9;
+  background-color: var(--main-bg-color);
+  border-radius: var(--main-radius);
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  align-content: center;
+
+}
+.desc10 {
+  grid-area: desc10;
+  background-color: var(--main-bg-color);
+  border-radius: var(--main-radius);
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  align-content: center;
+}
+.desc11 {
+  grid-area: desc11;
+  background-color: var(--main-bg-color);
+  border-radius: var(--main-radius);
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  align-content: center;
+}
+.desc12 {
+  grid-area: desc12;
+  background-color: var(--main-bg-color);
+  border-radius: var(--main-radius);
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  align-content: center;
+}
+.desc13 {
+  grid-area: desc13;
+  background-color: var(--main-bg-color);
+  border-radius: var(--main-radius);
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  align-content: center;
+}
+.desc14 {
+  grid-area: desc14;
+  background-color: var(--main-bg-color);
+  border-radius: var(--main-radius);
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  align-content: center;
+}
+.desc15 {
+  grid-area: desc15;
+  background-color: var(--main-bg-color);
+  border-radius: var(--main-radius);
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  align-content: center;
+}
+
+.imgx1 {
+  grid-area: imgx1;
+  align-self: center;
+  justify-self: center;
+  background-color: var(--main-bg-color);
+  border-radius: var(--main-radius);
+  
+  object-fit: cover;
+  
+}
+.imgx2 {
+  grid-area: imgx2;
+  align-self: center;
+  justify-self: center;
+  background-color: var(--main-bg-color);
+  border-radius: var(--main-radius);
+  object-fit: cover;
+}
+.imgx3 {
+  grid-area: imgx3;
+  align-self: center;
+  justify-self: center;
+  background-color: var(--main-bg-color);
+  border-radius: var(--main-radius);
+  object-fit: cover;
+}
+.imgx4 {
+  grid-area: imgx4;
+  align-self: center;
+  justify-self: center;
+  background-color: var(--main-bg-color);
+  border-radius: var(--main-radius);
+  object-fit: cover;
+}
+.imgx5 {
+  grid-area: imgx5;
+  align-self: center;
+  justify-self: center;
+  background-color: var(--main-bg-color);
+  border-radius: var(--main-radius);
+  object-fit: cover;
+}
+.imgx6 {
+  grid-area: imgx6;
+  align-self: center;
+  justify-self: center;
+  background-color: var(--main-bg-color);
+  border-radius: var(--main-radius);
+  object-fit: cover;
+}
+.imgx7 {
+  grid-area: imgx7;
+  align-self: center;
+  justify-self: center;
+  background-color: var(--main-bg-color);
+  border-radius: var(--main-radius);
+  object-fit: cover;
 }
